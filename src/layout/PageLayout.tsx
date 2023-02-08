@@ -26,11 +26,17 @@ const PageLayout = ({ children }: IChildren) => {
     };
   }, []);
   return (
-    <div className="relative bg-white text-black">
-      <div>
-        <Header />
+    <div className="relative bg-gray text-black">
+      <div className="min-h-screen">
+        <Header showSidebar={showSidebar} />
         {showSidebar && <Sidebar />}
-        <div className="pl-[325px] pr-[30px] w-full pt-[128px] min-h-screen bg-gray">{children}</div>
+        <div
+          className={`${
+            showSidebar ? "pl-[325px]" : "pl-[25px]"
+          } pr-[30px] pb-10 w-full pt-[128px] min-h-screen `}
+        >
+          {children}
+        </div>
       </div>
     </div>
   );

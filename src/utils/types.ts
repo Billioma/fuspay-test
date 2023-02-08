@@ -1,5 +1,4 @@
 export interface AppRoute {
-    element: React.ReactNode;
-    path: string;
-  }
-  
+  element: React.ReactNode;
+  path: string;
+}

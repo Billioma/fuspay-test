@@ -1,4 +1,4 @@
-import { add, t } from "../../../assets/exports";
+import { add, naira, t } from "../../../assets/exports";
 import { wallets } from "../../common/constants";
 
 const SecondLayer = () => {
@@ -32,7 +32,14 @@ const SecondLayer = () => {
 
             <div className="mt-[30px] pt-[21px] border-dashed border-t">
               <div className="text-sm">Balance</div>
-              <div className="mt-[7px] text-xl font-semibold">5,000,048</div>
+              <div className="mt-[7px] text-purple text-xl items-center gap-[7px] font-semibold flex">
+                {data?.country === "USA" ? (
+                  <span>$</span>
+                ) : (
+                  <img alt="naira" src={naira} />
+                )}
+                5,000,048
+              </div>
             </div>
 
             <div className="flex mt-[40px] gap-[5px]">

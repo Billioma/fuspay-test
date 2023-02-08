@@ -13,5 +13,7 @@ export { default as ngn } from "./ngn.png";
 export { default as usa } from "./usa.png";
 export { default as t } from "./t.png";
 export { default as arrow } from "./arrow.png";
+export { default as naira } from "./naira.png";
+export { default as piggy } from "./piggy.png";
 export { default as wave } from "./wave.png";
 export { default as user } from "./user.png";

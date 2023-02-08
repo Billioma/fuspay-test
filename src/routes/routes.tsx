@@ -6,8 +6,7 @@ import { AppRoute } from "../utils/types";
 
 const { OVERVIEW } = PATHS;
 
-const Overview = WithSuspense(
-  lazy(() => import("../pages/Overview")))
+const Overview = WithSuspense(lazy(() => import("../pages/Overview")));
 
 export const ROUTES: AppRoute[] = [
   { path: OVERVIEW, element: <Overview /> },

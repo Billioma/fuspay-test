@@ -23,7 +23,7 @@ export const data = [
     id: 3,
     icon: user,
     name: "Profile",
-    path: "/transactions",
+    path: "/profile",
   },
 ];
 
@@ -32,25 +32,25 @@ export const wallets = [
     id: 1,
     flag: ngn,
     color: "#ebe3ff",
-    country: "Nigeria"
+    country: "Nigeria",
   },
   {
     id: 2,
     flag: usa,
     color: "#FFEEC5",
-    country: "USA"
+    country: "USA",
   },
   {
     id: 3,
     flag: usa,
     color: "#E0E5FF",
-    country: "USA"
+    country: "USA",
   },
   {
     id: 4,
     flag: ngn,
     color: "#FFEEC5",
-    country: "Nigeria"
+    country: "Nigeria",
   },
 ];
 
@@ -61,4 +61,21 @@ export const tableheader = [
   "Description",
   "Date",
   "",
-]
+];
+
+export const tabs = ["On-going Tx", "Authorize Tx"];
+
+export const on = ["Processing", "Completed", "Completed", "Completed"];
+
+export const activeStyle = {
+  backgroundColor: "#293B96",
+  alignItems: "center",
+  display: "flex",
+  color: "#B8BED9",
+  fontSize: "16px",
+  lineHeight: "20px",
+  padding: "33px 20px",
+  height: "45px",
+  gap: "8px",
+  borderRadius: "16px",
+};

@@ -1,23 +1,10 @@
 import { NavLink } from "react-router-dom";
 import { logout, sidelogo } from "../assets/exports";
-import { data } from "../components/common/constants";
+import { data, activeStyle } from "../components/common/constants";
 
 const Sidebar = () => {
-  const activeStyle = {
-    backgroundColor: "#293B96",
-    alignItems: "center",
-    display: "flex",
-    color: "#B8BED9",
-    fontSize: "16px",
-    // fontFamily: "Lato",
-    lineHeight: "20px",
-    padding: "33px 20px",
-    height: "45px",
-    gap: "8px",
-    borderRadius: "16px",
-  };
   return (
-    <div className="flex font-lato flex-col justify-between z-5 fixed min-h-screen w-288 bg-white">
+    <div className="flex font-lato flex-col justify-between z-[5] fixed min-h-screen w-288 bg-white">
       <div className="mb-[77px]">
         <img
           src={sidelogo}
